@@ -12,12 +12,12 @@ https://your-app.railway.app
 - **Deployment:** Railway
 
 ## Features
-- 🔐 JWT Authentication (Signup/Login)
-- 👥 Role-based access: Admin & Member
-- 📁 Project management with team members
-- ✅ Task creation, assignment & status tracking (Kanban board)
-- 📊 Dashboard with stats, overdue tasks, recent activity
-- 🌐 REST API with full validation
+- JWT Authentication (Signup/Login)
+- Role-based access: Admin & Member
+- Project management with team members
+- Task creation, assignment & status tracking (Kanban board)
+- Dashboard with stats, overdue tasks, recent activity
+- REST API with full validation
 
 ## Local Setup
 ```bash
