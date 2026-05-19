@@ -5,10 +5,15 @@ const { getDb } = require('./config/database');
 
 const app = express();
 
+// Fix CORS for Railway
 app.use(cors({
-  origin: process.env.FRONTEND_URL || '*',
-  credentials: true
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: false
 }));
+
+app.options('*', cors());
 app.use(express.json());
 
 // Init DB on startup
@@ -28,4 +33,4 @@ app.use((err, req, res, next) => {
 });
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, '0.0.0.0', () => console.log(`🚀 Backend running on port ${PORT}`));
+app.listen(PORT, '0.0.0.0', () => console.log(` Backend running on port ${PORT}`));
