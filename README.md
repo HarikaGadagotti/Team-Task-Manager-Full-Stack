@@ -3,7 +3,7 @@
 A full-stack web application for managing projects, assigning tasks, and tracking team progress with role-based access control.
 
 ## Live URL
-https://natural-victory-production-0c5e.up.railway.app/dashboard
+https://natural-victory-production-0c5e.up.railway.app
 
 ## Tech Stack
 - **Backend:** Node.js, Express, MySQL
